@@ -1,0 +1,592 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+:root {
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --white-color: #ffffff;
+  --hero-text-color: #9da4bd;
+  --barbers-desc-color: #ff6c00;
+  --barbers-bg-color: #f7f7f7;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+header {
+  background-color: antiquewhite;
+}
+
+.container {
+  outline: 1px solid red;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+
+/* ================ HEADER =================== */
+
+.header-main {
+  padding-top: 30px;
+}
+
+.container > .main-nav {
+  display: flex;
+}
+
+.nav-item > .nav-link {
+  display: flex;
+  padding-top: 23px;
+  padding-bottom: 31px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--barbers-desc-color);
+}
+
+.nav-list > .nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-nav > .nav-list {
+  display: flex;
+  margin-left: 130px;
+}
+
+.main-nav > .logo {
+  display: flex;
+}
+
+.container > .main-contacts {
+  display: flex;
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+.main-contacts > .call-link {
+  display: flex;
+  margin-right: 43px;
+  padding-top: 23px;
+  padding-bottom: 31px;
+}
+
+.main-contacts > .call-link:hover {
+  color: var(--barbers-desc-color);
+}
+
+.call-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* ================ BUTTON ===================== */
+
+.btn {
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 19px;
+  padding: 12px 20px;
+  min-width: 160px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  border-radius: 25px;
+  border: 1px solid var(--barbers-desc-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--barbers-desc-color);
+}
+
+/* ================ BUTTON ===================== */
+
+/* =================== HERO SECTION ============ */
+
+.hero {
+  background-color: rgb(230, 192, 142);
+}
+/* list of social links  */
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social > .social-list {
+  display: flex;
+
+  /* padding-top: 28px; */
+  list-style: none;
+  transform: rotate(-90deg);
+}
+
+.social-list > .social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-item > .social-link {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.social-item > .social-link:hover {
+  color: var(--barbers-desc-color);
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  width: 444px;
+}
+
+.hero > .hero-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero > .hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.hero > .hero-text {
+  letter-spacing: 0.02em;
+  color: var(--hero-text-color);
+}
+
+/* ================ ABOUT SECTION ============= */
+
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list > .about-item {
+  margin-right: 30px;
+}
+
+.about-content {
+  font-display: flex;
+}
+
+.about-content > .about-info {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.about-content > .about-title-one {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.about-content > .about-title-two {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.about-content > .about-text {
+  margin-top: 0;
+  margin-bottom: 42px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.btn.about-btn {
+  color: var(--primary-text-color);
+}
+/* ============= Service & Prices Section =================== */
+
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: antiquewhite;
+}
+
+.services-content {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.services-head {
+  width: 100%;
+  outline: 1px solid #ff6c00;
+}
+
+.services-info {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.services-title {
+  margin-bottom: 44px;
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.price-left {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 30px;
+  width: 570px;
+  outline: 1px solid black;
+}
+
+.price-right {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 570px;
+  outline: 1px solid black;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.services-list > .services-item {
+  color: var(--hero-text-color);
+  display: flex;
+}
+
+.services-list > .services-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.stick {
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+  width: 252px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.services-name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.services-price {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn.services-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================== ADVANTAGES SECTION ====================== */
+
+.advantages {
+  background-color: bisque;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.container.ad-content {
+  padding-right: 110px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-item:nth-child(2n) {
+  margin-top: 27px;
+}
+
+.advantages-item {
+  width: 170px;
+  height: 122px;
+  padding: 18px 24px;
+  text-align: center;
+  background-color: var(--barbers-bg-color);
+}
+
+.advantages-item > .advantages-score {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.advantages-item > .advantages-name {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.advantages-overview > .section-info.styling {
+  margin-bottom: 18px;
+}
+
+/* =========== RIGHT =======================*/
+
+.advantages-overview {
+  outline: 1px solid #303030;
+}
+
+.section-info.styling {
+  margin-bottom: 18px;
+}
+
+.advantages-title {
+  margin-bottom: 18px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.advantages-text {
+  color: var(--secondary-text-color);
+}
+
+/* ================= OUR BARBERS SECTION =================== */
+/* Section-info common styles for <p> in dif sections */
+
+.section-info {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.barbers {
+  background-color: var(--barbers-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.barbers-content {
+  display: block;
+}
+
+.barbers-list {
+  display: flex;
+}
+
+.barbers-list > .barbers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-info.barbers-info {
+  margin-bottom: 20px;
+}
+
+.barbers-title {
+  margin-bottom: 44px;
+
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+.barbers-card {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.barbers-name {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+}
+
+.barbers-desc {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--barbers-desc-color);
+}
+
+/* ====================== Gallery Section =========================== */
+.gallery {
+  background-color: bisque;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container.gallery-content {
+  display: block;
+}
+
+.section-info.add-style {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ====================== CONTACTS =========================== */
+
+.contacts {
+  background-color: antiquewhite;
+}
+
+.contacts > .contacts-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-item > .contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  font-style: normal;
+  color: var(--hero-text-color);
+  text-decoration: none;
+}
+
+.contacts-link.contacts-street {
+  font-weight: 700;
+}
+
+.contacts > .contacts-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.contacts > .contacts-hours {
+  color: var(--hero-text-color);
+}
+
+/* ====================== FOOTER ================================= */
+
+.container.footer-container {
+  align-items: center;
+}
+
+.copy {
+  display: inherit;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--hero-text-color);
+}
+
+.social-list.footer-social {
+  display: flex;
+  margin-left: auto;
+}
