@@ -321,11 +321,14 @@ ul {
   padding-bottom: 120px;
   padding-left: 215px;
   padding-right: 215px;
-  background-image: url('../images/service-bg.jpg');
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(1, 1, 5, 0.7), rgba(10, 10, 15, 0.7)), url('../images/service-bg.jpg');
   background-position: center;
   background-color: #111319;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1600px;
 }
 
 .services-content {
@@ -357,6 +360,7 @@ ul {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  color: var(--white-color);
 }
 
 .price-left {
@@ -393,13 +397,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.stick {
-  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-  width: 252px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .services-name {
   margin-top: 0;
   margin-bottom: 0;
@@ -418,7 +415,6 @@ ul {
 /* ================== ADVANTAGES SECTION ====================== */
 
 .advantages {
-  background-color: bisque;
   padding-top: 120px;
   padding-bottom: 150px;
 }
@@ -468,7 +464,6 @@ ul {
 /* =========== RIGHT =======================*/
 
 .advantages-overview {
-  outline: 1px solid #303030;
 }
 
 .section-info.styling {
@@ -552,7 +547,6 @@ ul {
 
 /* ====================== Gallery Section =========================== */
 .gallery {
-  background-color: bisque;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -634,5 +628,6 @@ ul {
 
 .social-list.footer-social {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
