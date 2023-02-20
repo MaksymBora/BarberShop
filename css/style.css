@@ -43,6 +43,36 @@ ul {
   width: 1170px;
 }
 
+/* Dark and Light Lines */
+
+.subtitle-light {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle-light::before {
+  margin-right: 20px;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.subtitle-dark {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle-dark::before {
+  margin-right: 20px;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-text-color);
+}
+
 /* ================ HEADER =================== */
 
 .header-main {
@@ -201,22 +231,11 @@ ul {
 }
 
 .hero-info > .hero-desc {
-  display: flex;
-  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
-}
-
-.hero-desc::before {
-  margin-right: 20px;
-  display: block;
-  content: '';
-  width: 60px;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-info > .hero-title {
