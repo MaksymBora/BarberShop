@@ -42,6 +42,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid violet;
 }
 
 /* Dark and Light Lines */
@@ -191,6 +192,7 @@ ul {
   justify-content: flex-end;
   align-items: center;
   width: 100px;
+
   transform: rotate(-90deg);
 }
 
@@ -273,6 +275,10 @@ ul {
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.container.about-style {
+  display: flex;
 }
 
 .about-list {
