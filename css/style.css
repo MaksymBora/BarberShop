@@ -37,7 +37,6 @@ ul {
 }
 
 .container {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -80,14 +79,19 @@ ul {
 .header-main {
   position: absolute;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.container > .main-nav {
+.container.header-style {
   display: flex;
 }
 
-.nav-item > .nav-link {
+.main-nav {
+  display: flex;
+}
+
+.nav-link {
   display: flex;
   padding-top: 23px;
   padding-bottom: 31px;
@@ -177,6 +181,10 @@ ul {
 /* =================== HERO SECTION ============ */
 
 /* list of social links  */
+
+.hero .container {
+  display: flex;
+}
 
 .social {
   display: flex;
