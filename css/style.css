@@ -212,11 +212,11 @@ ul {
   margin-right: 40px;
 }
 
-.social-list > .social-item:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.social-item > .social-link {
+.social-link {
   display: flex;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -669,8 +669,6 @@ ul {
 
 .copy {
   display: inherit;
-  margin-top: 56px;
-  margin-bottom: 56px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -681,4 +679,9 @@ ul {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+.footer-link {
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
