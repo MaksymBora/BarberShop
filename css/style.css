@@ -42,8 +42,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1200px;
-
-  outline: 1px solid violet;
 }
 
 /* Dark and Light Lines */
@@ -691,6 +689,12 @@ ul {
 .form-style:focus {
   outline: none;
   border: 1px solid var(--barbers-desc-color);
+}
+
+.btn.booking-btn {
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
 }
 
 /* -------- Contacts ------- */
