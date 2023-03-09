@@ -602,6 +602,8 @@ ul {
 .booking-form-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 44px;
   padding-right: 15px;
   width: 50%;
 }
@@ -719,12 +721,16 @@ ul {
   margin-bottom: 70px;
 }
 
-.contacts-item > .contacts-link {
+.contacts-link {
   font-size: 18px;
   line-height: 1.67;
   font-style: normal;
   color: var(--hero-text-color);
   text-decoration: none;
+}
+
+.email-link {
+  text-decoration: underline;
 }
 
 .contacts-link.contacts-street {
