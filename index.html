@@ -304,9 +304,34 @@
       <!-- Contacts -->
       <section class="contacts">
         <div class="container contacts-container">
-          <div class="booking-form-wrapper">
-            <h2>HELLO</h2>
-          </div>
+          <form class="booking-form-wrapper">
+            <h2 class="booking-title">Online-booking</h2>
+            <label class="booking-user-name">
+              <input
+                type="text"
+                name="user_name"
+                class="booking-name-input form-style"
+                placeholder="Name*"
+              />
+            </label>
+            <label class="booking-user-phone">
+              <input
+                type="tel"
+                name="user_phone"
+                class="booking-phone-input form-style"
+                placeholder="Phone*"
+              />
+            </label>
+            <label class="booking-user-feedback">
+              <textarea
+                name="feedback"
+                class="booking-feedback form-style"
+                placeholder="Message"
+                spellcheck="false"
+              ></textarea>
+            </label>
+          </form>
+
           <div class="contants-wrapper">
             <h2 class="contacts-title">Contacts</h2>
             <address>
