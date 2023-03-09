@@ -591,10 +591,31 @@ ul {
 /* ====================== CONTACTS =========================== */
 
 .contacts {
-  background-color: antiquewhite;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: #191c26;
+  background-image: url('../images/contacts-bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
 }
 
-.contacts > .contacts-title {
+.contacts-container {
+  display: flex;
+}
+
+.booking-form-wrapper {
+  width: 50%;
+}
+
+.contants-wrapper {
+  padding-left: 100px;
+  width: 50%;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: 1.17;
@@ -604,6 +625,14 @@ ul {
 
 .contacts-list {
   list-style: none;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-item:last-child {
+  margin-bottom: 70px;
 }
 
 .contacts-item > .contacts-link {
@@ -618,7 +647,8 @@ ul {
   font-weight: 700;
 }
 
-.contacts > .contacts-desc {
+.contacts-desc {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -626,7 +656,7 @@ ul {
   color: var(--white-color);
 }
 
-.contacts > .contacts-hours {
+.contacts-hours {
   color: var(--hero-text-color);
 }
 
