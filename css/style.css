@@ -107,7 +107,8 @@ ul {
   transition: color 250ms cubic-bezier(0.14, 0.58, 0.63, 0.65);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--barbers-desc-color);
 }
 
@@ -847,4 +848,101 @@ ul {
 .footer-link {
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+/* =================== Modal ======================================= */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 576px;
+  width: 408px;
+  padding: 72px 24px 24px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%), 0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-info {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-form-field {
+  margin-bottom: 8px;
+}
+
+.modal-form-field:nth-child(4n) {
+  margin-bottom: 16px;
+}
+
+.modal-form-field-desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  color: #9da4bd;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  background-color: inherit;
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--barbers-desc-color);
+}
+
+.modal-form-message {
+  resize: none;
+  display: block;
+  height: 120px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  background-color: inherit;
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border-color: var(--barbers-desc-color);
+}
+
+.modal-form-submit {
+  display: inline-block;
+  align-self: center;
+  margin: 0;
 }
