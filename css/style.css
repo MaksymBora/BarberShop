@@ -470,9 +470,6 @@ ul {
 
 /* =========== RIGHT =======================*/
 
-.advantages-overview {
-}
-
 .section-info.styling {
   margin-bottom: 18px;
 }
@@ -752,6 +749,29 @@ ul {
   font-style: normal;
   color: var(--hero-text-color);
   text-decoration: none;
+}
+
+.contacts-item {
+  display: flex;
+}
+
+.location-link-icon {
+  margin-right: 16px;
+}
+
+.location-link-icon .map-icon {
+  margin-right: 0;
+}
+
+.map-icon {
+  margin-right: 16px;
+  fill: #9da4bd;
+  cursor: pointer;
+}
+
+.map-icon:hover,
+.map-icon:focus {
+  fill: var(--barbers-desc-color);
 }
 
 .email-link {
