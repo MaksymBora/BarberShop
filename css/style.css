@@ -199,16 +199,15 @@ ul {
 
 .social {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100px;
-
-  transform: rotate(-90deg);
+  align-items: flex-end;
 }
 
 .social > .social-list {
   display: flex;
   align-items: center;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  width: 100px;
   list-style: none;
 }
 
@@ -217,6 +216,7 @@ ul {
   content: '';
   width: 60px;
   height: 1px;
+  flex-shrink: 0;
   background-color: var(--primary-text-color);
   margin-right: 40px;
 }
