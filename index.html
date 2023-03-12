@@ -73,7 +73,7 @@
             rel="noopener noreferrer nofollow"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="btn">Online-booking</button>
+          <button type="button" class="btn" data-modal-open>Online-booking</button>
         </div>
       </div>
     </header>
@@ -142,7 +142,7 @@
               a team that is always "on the same wave" with clients. Therefore, we are always ready to
               improve everyone who comes to us!
             </p>
-            <button type="button" class="btn about-btn">Online-booking</button>
+            <button class="btn about-btn" type="button">Online-booking</button>
           </div>
         </div>
       </section>
@@ -203,7 +203,7 @@
             </ul>
           </div>
 
-          <button type="button" class="btn services-btn">Online-booking</button>
+          <button type="button" class="btn services-btn" data-modal-open>Online-booking</button>
         </div>
       </section>
 
@@ -590,11 +590,11 @@
       <!-- /Contacts -->
 
       <!--  Modal  -->
-      <div class="backdrop">
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="close-btn" type="button">
-            <svg class="modal-close">
-              <use href=""></use>
+          <button class="close-btn" type="button" data-modal-close>
+            <svg class="modal-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <p class="modal-info">Leave your contacts and we will call you back</p>
@@ -662,5 +662,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
